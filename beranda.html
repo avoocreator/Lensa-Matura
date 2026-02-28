@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Listening Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="CSS Style/style-beranda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="Material/Logo Lensa Matura - Colored.png" alt="Logo" style="height: 60px; width: auto;">
+            Listening<span>Day</span>
+        </div>
+        <div class="nav-links">
+            <button id="logoutBtn" class="btn-logout">Keluar</button>
+        </div>
+    </div>
+</nav>
+
+    <main class="container">
+        <header class="welcome-section">
+            <h2 id="welcomeText">Selamat Datang, Responden</h2>
+            <p>Pilih kategori untuk memberikan rating dan aspirasi Anda.</p>
+        </header>
+
+        <section class="slider-section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" onclick="goToAspirasi('Fasilitas')">
+                        <img src="Material/fasilitas.webp" alt="Fasilitas">
+                        <div class="banner-content">
+                            <h3>Fasilitas dan Sarana Prasarana</h3>
+                            <p>Ruang kelas, toilet, lapangan, dan sebagainya</p>
+                        </div>
+                    </div>
+                     <div class="swiper-slide" onclick="goToAspirasi('Kebijakan Sekolah')">
+                        <img src="Material/kebijakan.webp" alt="Kebijakan Sekolah">
+                        <div class="banner-content">
+                            <h3>Kebijakan Sekolah</h3>
+                            <p>Sistem tata tetib, absensi, sanksi, dan sebagainya</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="goToAspirasi('Akademik')">
+                        <img src="Material/akademik.webp" alt="Akademik">
+                        <div class="banner-content">
+                            <h3>Akademik</h3>
+                            <p>Metode pembelajaran, tugas, sistem penilaian, dan sebagainya </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="goToAspirasi('Lingkungan')">
+                        <img src="Material/kebersihan.webp" alt="Lingkungan">
+                        <div class="banner-content">
+                            <h3>Lingkungan Sekolah dan Kebersihan</h3>
+                            <p>Lingkungan kantin, kebersihan area sekolah, keindahan, dan sebagainya</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="goToAspirasi('Hubungan')">
+                        <img src="Material/hubungan.webp" alt="Hubungan">
+                        <div class="banner-content">
+                            <h3>Hubungan Sosial dan Relasi</h3>
+                            <p>Lingkungan pertemanan, interaksi, hubungan, dan sebagainya</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="goToAspirasi('Keamanan')">
+                        <img src="Material/keamanan.webp" alt="Keamanan">
+                        <div class="banner-content">
+                            <h3>Keamanan dan Keselmatan</h3>
+                            <p>Sistem penjagaan, pencegahan konflik, keamanan area sekolah, dan sebagainya</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" onclick="goToAspirasi('Aktivitas')">
+                        <img src="Material/ekstra.webp" alt="Aktivitas">
+                        <div class="banner-content">
+                            <h3>Aktivitas Siswa dan Pengembangan Diri</h3>
+                            <p>Ekstrakurikuler, acara sekolah, dan sebagainya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Java Script/script-beranda.js"></script>
+</body>
+</html>
